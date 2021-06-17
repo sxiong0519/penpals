@@ -1,0 +1,59 @@
+{
+    "letters": [],
+    "authors": [
+        {
+            "id": 1,
+            "name": "John Smith",
+            "email": "john.smith@penpal.com"
+        },
+        {
+            "id": 2,
+            "name": "Amaya Anderson",
+            "email": "amaya.anderson@penpal.com"
+        },
+        {
+            "id": 3,
+            "name": "Peter Pettigrew",
+            "email": "peter.pettigew@penpal.com"
+        }
+    ],
+    "recipients": [
+        {
+            "id": 1,
+            "name": "Eloise Charms",
+            "email": "e.charms@penpal.com"
+        },
+        {
+            "id": 2,
+            "name": "Stephanie Drew",
+            "email": "sdrew@penpal.com"
+        },
+        {
+            "id": 3,
+            "name": "Louis Young",
+            "email": "lyoung05@penpal.com"
+        }
+    ],
+    "topics": [
+        {
+            "id": 1,
+            "topic": "business"
+        },
+        {
+            "id": 2,
+            "topic": "friendly"
+        },
+        {
+            "id": 3,
+            "topic": "family"
+        },
+        {
+            "id": 4,
+            "topic": "congratulations"
+        },
+        {
+            "id": 5,
+            "topic": "condolences"
+        }
+    ]
+}
