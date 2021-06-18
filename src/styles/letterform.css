@@ -1,3 +1,8 @@
 .dropdown {
-    width: 50em
+    width: 50em;
+}
+
+.textarea {
+    width: 50em;    
+    height: 50em;
 }
