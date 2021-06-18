@@ -1,17 +1,17 @@
-import { ClownRequest } from "./ClownRequest.js"
-import { fetchReservations } from "./data.js"
+import { fetchAuthors, fetchRecipients, fetchTopics} from "./data.js"
+import { letterForms } from "./LetterForm.js"
 
 const mainContainer = document.querySelector("#container")
 
 const render = () => {
-    fetchReservations().then(
+    fetchAuthors().then(
         () => {
-            mainContainer.innerHTML = ClownRequest()
+            mainContainer.innerHTML = letterForms()
         }
     )
 }
 
-render()
+
 
 mainContainer.addEventListener(
     "stateChanged",
@@ -19,3 +19,14 @@ mainContainer.addEventListener(
         render()
     }
 )
+
+fetchAuthors()
+.then( 
+    fetchTopics()
+)
+.then(
+    fetchRecipients()
+)
+.then ( () => {
+    render()
+})
