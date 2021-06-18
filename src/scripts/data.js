@@ -57,6 +57,10 @@ export const writeTopics = () => {
     return [...penpals.topics]
 }
 
+export const setTopic = (id) => {
+    penpals.letters.topicId = id
+}
+
 export const sendLetters = (userLetters) => {
     const fetchOptions = {
         method: "POST",
