@@ -1,3 +1,5 @@
+const mainContainer = document.querySelector("#container");
+
 const penpals = {
     letters: [],
     authors: [],
@@ -58,8 +60,15 @@ export const writeTopics = () => {
 }
 
 export const setTopic = (id) => {
-    penpals.letters.topicId = id
+    penpals.letters.topicsId = id
 }
+export const setAuthor = (id) => {
+    penpals.letters.authorsId = id
+}
+export const setRecipient = (id) => {
+    penpals.letters.recipientsId = id
+}
+
 
 export const sendLetters = (userLetters) => {
     const fetchOptions = {

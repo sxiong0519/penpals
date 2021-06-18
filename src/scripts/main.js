@@ -1,4 +1,4 @@
-import { fetchAuthors, fetchRecipients, fetchTopics} from "./data.js"
+import { fetchAuthors, fetchLetters, fetchRecipients, fetchTopics} from "./data.js"
 import { letterForms } from "./LetterForm.js"
 
 const mainContainer = document.querySelector("#container")
@@ -26,6 +26,9 @@ fetchAuthors()
 )
 .then(
     fetchRecipients()
+)
+.then(
+    fetchLetters()
 )
 .then ( () => {
     render()
