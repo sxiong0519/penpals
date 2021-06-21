@@ -17,7 +17,7 @@ export const Letters = () => {
         const foundRecipient = recipients.find(
             (recipient) => {
                 return recipient.id === parseInt(letter.recipientId)
-            }
+}
         )
         const foundTopic = topics.find(
             (topic) => {
