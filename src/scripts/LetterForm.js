@@ -35,7 +35,7 @@ export const letterForms = () => {
     <h1>PenPals Letter</h1>
     
         <div class="field">
-            <label class="label" for="authors">Authors</label>
+            <label class="label" for="authors"><h2>Authors</h2></label>
             <div class="dropdown">
             <select name="authors" id="authors" class="dropdown">
             <option>Choose Author.... </option>
@@ -44,17 +44,17 @@ export const letterForms = () => {
             </div>
         </div>
         <div class="field">
-            <label class="label" for="bodyLetter">Letter</label>
+            <label class="label" for="bodyLetter"><h2>Letter</h2></label>
             <div>
             <textarea id="letter" type="text" name="Letter" class="textarea"></textarea>
             </div>
         </div>
         <div id="topics" name="topics" class="topics">
-                Topics
+        <h2>Topics</h2>
                 ${Topics()}
         </div>
         <div class="field">
-            <label class="label" for="recipients">Recipients</label>
+            <label class="label" for="recipients"><h2>Recipients</h2></label>
             <div class="dropdown">
             <select name="recipients" id="recipients" class="dropdown">
             <option>Choose Recipient.... </option>
@@ -66,8 +66,9 @@ export const letterForms = () => {
         <button class="button" id="submitRequest">Send Letter</button>
 
         <div class="field">
-        <label>Letters</label>
-        ${Letters()}
+        <label><h2>Letters</h2></label>
+        <section class="body">${Letters()}
+        </section>
         </div>
     `
 

@@ -25,7 +25,21 @@ export const Letters = () => {
             }
         )
         return `<li>
-        letters #${foundAuthor.name} ${foundAuthor.email} ${foundRecipient.name} ${foundTopic.topic} ${letter.letters}
+        Topic: ${foundTopic.topic}
+        <br>
+        <br>
+        Dear ${foundRecipient.name} (${foundRecipient.email}),
+        <br>
+        <br>
+        ${letter.letters}
+        <br>
+        <br>
+        Sincerely,<br>
+        ${foundAuthor.name} (${foundAuthor.email})
+        <br>
+        Sent on ${new Date(letter.timestamp).toLocaleDateString()}
+        <br>
+        <br>
         </li>`
         }
     )
