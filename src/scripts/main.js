@@ -22,13 +22,13 @@ mainContainer.addEventListener(
 
 fetchAuthors()
 .then( 
-    fetchTopics()
+    fetchTopics
 )
 .then(
-    fetchRecipients()
+    fetchRecipients
 )
 .then(
-    fetchLetters()
+    fetchLettersl
 )
 .then ( () => {
     render()

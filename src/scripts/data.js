@@ -60,13 +60,13 @@ export const writeTopics = () => {
 }
 
 export const setTopic = (id) => {
-    penpals.letters.topicsId = id
+    penpals.letters.topicId = id
 }
 export const setAuthor = (id) => {
-    penpals.letters.authorsId = id
+    penpals.letters.authorId = id
 }
 export const setRecipient = (id) => {
-    penpals.letters.recipientsId = id
+    penpals.letters.recipientId = id
 }
 
 
