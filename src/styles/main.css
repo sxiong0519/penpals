@@ -1,4 +1,5 @@
 @import "letterform.css";
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap');
 
 
 body,
@@ -13,8 +14,16 @@ textarea {
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: "Patua One", serif;
+  font-family: "Mountains of Christmas", serif;
   letter-spacing: 2px;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 2em;
 }
 
 ul {
@@ -23,7 +32,7 @@ ul {
 }
 
 #submitRequest {
-    margin: 1rem 0 2rem 2rem;
+    margin: 1rem 0 1rem 1rem;
     padding: 0.5rem;
     background-color: rgb(227, 72, 72);
     color: lightgoldenrodyellow;

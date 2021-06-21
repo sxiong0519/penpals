@@ -28,7 +28,7 @@ fetchAuthors()
     fetchRecipients
 )
 .then(
-    fetchLettersl
+    fetchLetters
 )
 .then ( () => {
     render()
